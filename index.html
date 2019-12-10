@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Hotel</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheeet" href="css/clock.css">
+    
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+    
+    <script src="./js/gcbclock.js"></script>
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to P@Rk ToWn</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@hotelinn.com</a></span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+      
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>otel Park Town</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About Us</a></li>
+                         <li><a href="#team" class="smoothScroll">our staff</a></li>
+                         <li><a href="#news" class="smoothScroll">News</a></li>
+                         <li><a href="converter.html">Converter</a></li>
+                         <li><a href="faqs.html">Faqs</a></li>
+
+                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Make a Booking</a></li>
+                    </ul>
+               </div>
+
+          </div>
+         
+         <div id="leftclock">
+                          <span id="hours">&nbsp;</span>:
+            <span id="minutes">&nbsp;</span>:
+            <span id="seconds">&nbsp;</span>&nbsp;
+            <span id="ampm">&nbsp;</span>
+                             </div>
+         <p id="d2">
+         
+           <script type="text/javascript">
+              var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+
+		if(dd<10) {
+		    dd = '0'+dd
+		} 
+
+		if(mm<10) {
+		    mm = '0'+mm
+		} 
+
+		today = mm + '/' + dd + '/' + yyyy;
+		document.getElementById("d2").innerHTML = today;
+
+        </script>
+
+         </p>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Healthy Environment</h3>
+                                             <h1>The Best services makes you feel special</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Let's Have a look</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Give us a Chance</h3>
+                                             <h1>Let's make your life happier</h1>
+                                             <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Park Town</h3>
+                                             <h1>Your holiday stay</h1>
+                                             <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to <i class="fa fa-h-square"></i>otel Park Town</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p>The Park Town, affiliated with the Universities in ontario region for Hotel management courses, is Canada's most research-intensive and the largest centre dedicated to improving the best services in the country.</p>
+                                   <p>It is Canada's most research-intensive hotel and the largest centre dedicated to improving services in the country.</p>
+                              </div>
+                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                   <figcaption>
+                                        <h3>Emily winterbotom</h3>
+                                        <p>Manager</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+        
+
+     </section>
+
+
+     <!-- TEAM -->
+     <section id="team" data-stellar-background-ratio="1">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Staff</h2>
+                         </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="images/team-image1.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>Nate feilds</h3>
+                                        <p>Head Chef</p>
+                                        <div class="team-contact-info">
+                                             <p><i class="fa fa-phone"></i> 010-020-9999</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">Parktown@hotel.com</a></p>
+                                        </div>
+                                        <ul class="social-icon">
+                                             <li><a href="https://www.linkedin.com" class="fa fa-linkedin-square"></a></li>
+                                             <li><a href="https://mail.google.com" class="fa fa-envelope-o"></a></li>
+                                        </ul>
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="images/team-image2.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>stela Stewart</h3>
+                                        <p>Event Planner</p>
+                                        <div class="team-contact-info">
+                                             <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">park town@hotel.com</a></p>
+                                        </div>
+                                        <ul class="social-icon">
+                                             <li><a href="https://www.facebook.com/" class="fa fa-facebook-square"></a></li>
+                                             <li><a href="https://mail.google.com" class="fa fa-envelope-o"></a></li>
+                                             <li><a href="https://www.flickr.com/" class="fa fa-flickr"></a></li>
+                                        </ul>
+                                   </div>
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="images/team-image3.jpg" class="img-responsive" alt="">
+
+                                   <div class="team-info">
+                                        <h3>Miasha watson</h3>
+                                        <p>Training & Development</p>
+                                        <div class="team-contact-info">
+                                             <p><i class="fa fa-phone"></i> 010-040-0140</p>
+                                             <p><i class="fa fa-envelope-o"></i> <a href="#">park town@hotel.com</a></p>
+                                        </div>
+                                        <ul class="social-icon">
+                                             <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+                                             <li><a href="https://mail.google.com" class="fa fa-envelope-o"></a></li>
+                                        </ul>
+                                   </div>
+
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- NEWS -->
+     <section id="news" data-stellar-background-ratio="2.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <!-- SECTION TITLE -->
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Latest News</h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>March 08, 2018</span>
+                                   <h3><a href="news-detail.html">About Amazing student Training facilities</a></h3>
+                                   <p>Advancements in technology have allowed students to be better at their proffesion and that every person has a their chance in their pratice which makes them a more profficinal</p>
+                                   <div class="author">
+                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Milton Harley </h5>
+                                             <p>CEO / Founder</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>February 20, 2018</span>
+                                   <h3><a href="news-detail.html">Introducing a first huge auditorium</a></h3>
+                                   <p>Many traditional artis say thatits been a very good place to perform and a grand marriages happen very offen. This is a very proud moment to have a very famos artis prefer to book a auditorium just because its is unique.</p>
+                                   <div class="author">
+                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Jason Stewart</h5>
+                                             <p>General Director</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- NEWS THUMB -->
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>January 27, 2018</span>
+                                   <h3><a href="news-detail.html">Food Festival</a></h3>
+                                   <p>This year’s event, the fourth annual installment, will feature celebrity chefs, renowned restaurants, competitive mixologists, flagship spirits and more during the four-day run. Last year’s festival welcomed more than 1,000 guests and this year’s events is expected to draw even more attendees.</p>
+                                   <div class="author">
+                                        <img src="images/author1.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Alda Abero</h5>
+                                             <p>Online Advertising</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- MAKE AN APPOINTMENT -->
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="images/author1.jpg" class="img-responsive" alt="">
+                    </div>
+
+                   
+
+<div class="col-md-6 col-md-push-1 animate-box">
+						<h3 class="form_heading">Fill the form for Room booking:<br><br></h3>
+						<form class="form-horizontal" ng-submit="submitCustomerForm()" role="form">
+			        <div class="form-group">
+			            <label for="firstName" class="col-sm-3 control-label">First Name</label>
+			            <div class="col-sm-6">
+			                <input type="text" id="firstName" class="form-control" ng-model="customer.firstName" required />
+			            </div>
+			            <div class="col-sm-3"></div>
+
+			        </div>
+			        <div class="form-group">
+			            <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+			            <div class="col-sm-6">
+			                <input type="text" id="lastName" class="form-control" ng-model="customer.lastName" required />
+			            </div>
+			            <div class="col-sm-3"></div>
+			        </div>
+			        
+			        <div class="form-group">
+			            <label for="d1" class="col-sm-3 control-label">Date</label>
+			            <div class="col-sm-6">
+			                <input type="date" id="d1" class="form-control" ng-model="customer.Date"/>
+			            </div>
+			            <div class="col-sm-7"></div>
+			        </div>
+			        
+			        <div class="form-group">
+			            <label for="gender" class="col-sm-3 control-label">Gender</label>
+			            <div class="col-sm-6">
+			                <select id="gender" class="form-control" ng-model="customer.gender" required>
+			                    <option value="male">Male</option>
+			                    <option value="female">Female</option>
+			                </select>
+			            </div>
+			            <div class="col-sm-7"></div>
+			        </div>
+                            
+                
+                            <div class="form-group">
+			            <label for="email" class="col-sm-3 control-label">Email</label>
+			            <div class="col-sm-6">
+			                <input type="text" id="email" class="form-control"  placeholder="Enter email" />
+			            </div>
+			            <div class="col-sm-3"></div>  
+				        <input type="submit" value="Save" class="btn btn-primary col-sm-offset-3" /> 
+				        <input type="reset" value="Reset" ng-click="resetForm()" class="btn" /> <br/>
+                            </div>
+		    		</form>
+					</div>
+              </div>
+         </div>
+
+     </section>
+
+
+     <!-- GOOGLE MAP -->
+     <section id="google-map">
+     
+          <iframe src="https://maps.google.com/maps?q=toronto%2Ceaten%20centre&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>           
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>Hotel Park Town
+555  Avenue  Toronto, Ontario Canada M5G 1X8 
+(Visitor parking is located at side of building, or on Street)</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 110-170-1170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">Park Town@Hotel.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Amazing Technology</h5></a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image01.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>New Operating Process</h5></a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="https://www.facebook.com" class="fa fa-facebook-square" ></a></li>
+                                   <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; Hotel Park Town 2018 
+                                   
+                                   
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Make a Booking</a>
+                                   <a href="#">our Staff</a>
+                                   <a href="#">News</a>
+                                   <a href="#">Currency Converter</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+    <script src="js/contact.js"></script>
+    
+              
+            
+</body>
+</html>

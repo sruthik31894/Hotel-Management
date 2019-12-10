@@ -1,0 +1,17 @@
+
+label {
+    width: 11em;
+    text-align: right;
+    padding-bottom: .5em;
+    margin-left: 50px;
+}
+input {
+   margin-left: 150em;
+    padding-left: 150px;
+    margin-bottom: .5em;
+    
+}
+#leftclock{
+    margin-left: 100px;
+    font-weight: bold;
+}

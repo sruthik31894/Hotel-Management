@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Hotel</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/faqcss.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+     <script src="./js/gcbclock.js"></script>
+    <script type="text/javascript" src="http://currencyconverter.55uk.net/currency_converter_json.js"></script>   
+	    <script type="text/javascript">
+	function getMyRates(jData) {
+		if (jData == null) {
+			alert("There was a problem parsing search results.");
+			return;
+		}
+		var myval = jData.ResultSet;
+		var mydiv = jData.xxMyDiv;
+		document.getElementById(mydiv).innerHTML =  myval;
+	}
+
+	function myPrivateConverterMany() {
+		var xxv = document.getElementById('xxvalue').value;
+		var xxf = document.getElementById('xxfrom').value;
+		var xxt = document.getElementById('xxto').value;
+		if (xxv > 0) {
+			getExchangeRatesDiv('xxrates',xxv,xxf,xxt,'true');
+		}
+	}
+	</script>
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+<!-- MENU -->
+    
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>otel Park Town</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="index.html">Home</a></li>
+                    </ul>
+               </div>
+
+          </div>
+          <p id="d2">
+         
+           <script type="text/javascript">
+              var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+
+		if(dd<10) {
+		    dd = '0'+dd
+		} 
+
+		if(mm<10) {
+		    mm = '0'+mm
+		} 
+
+		today = mm + '/' + dd + '/' + yyyy;
+		document.getElementById("d2").innerHTML = today;
+
+        </script>
+
+         </p>
+     
+     </section>
+
+     <!-- HEADER -->
+    <section>
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to P@Rk ToWn</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@hotelinn.com</a></span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+        
+
+         <h1 style="color: black; padding-left:370px">FAQS</h1>
+   
+	        <div class="col-md-7" style="padding-top: 26px;">
+                <main id="faqs">
+            
+            <h2><a href="#">Booking Cancellation?</a></h2>
+            <div>
+                <p>Requires a minimum cancellation fee of one night regardless of the hotel with which you book your reservation. ... Travelers may be subject to other cancellation penalties according to the hotel reservation policy for the individual hotel.
+                 </p>
+            </div>
+            <h2><a href="#">What time for Checkin?</a></h2>
+            <div>
+                <p>A minimum security deposit of $250 CAD will be pre-authorized on a credit card at check in. The pre-authorization hold will be released at check-out, however please be advised that it can take up to 10 business days for the funds to be cleared by the credit card financial institution. 
+                </p>
+            </div>
+            <h2><a href="#">Parking Available?</a></h2>
+            <div>
+                <p>IThe cost is $49.00 per day with in and out privileges...</p>
+            </div>
+        </main>
+
+
+            </section>
+            	
+           
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>Hotel Park Town
+555  Avenue  Toronto, Ontario Canada M5G 1X8 
+(Visitor parking is located at side of building, or on Street)</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 110-170-1170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">Park Town@Hotel.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Amazing Technology</h5></a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>New Organic Food Processes</h5></a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="https://www.facebook.com" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+                                   <li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; Hotel Park Town 2018 
+                                   
+                                   
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Make a Booking</a>
+                                   <a href="#">our Staff</a>
+                                   <a href="#">News</a>
+                                   <a href="#">Currency Converter</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+    <script src="js/contact.js"></script>
+        <script src="js/faqs.js"></script>
+
+</body>
+</html>
